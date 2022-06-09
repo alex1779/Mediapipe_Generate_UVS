@@ -1,4 +1,12 @@
 # Mediapipe_Generate_UVS
+![Intro](https://github.com/alex1779/Mediapipe_Generate_UVS/blob/master/imgs/1.jpg)
+## Requirements
+```
+numpy==1.22.3
+mediapipe==0.8.9.1
+opencv-python==4.5.5.64
+imutils==0.5.4
+```
 
 ## Installation on Windows using Anaconda
 ```
@@ -9,16 +17,24 @@ pip install -r requirements.txt
 
 ```
 ## For running
+Use the parameter -i to put the correct path where your image is located, like the example below
+
 ```
-you must use the -i parameter to enter the path where the image is located, like the example below
 python main.py -i input/01.jpg
 ```
 
+![Intro](https://github.com/alex1779/Mediapipe_Generate_UVS/blob/master/imgs/2.jpg)
+
+Press S to save the image in 'ouput' folder. if there is no folder named 'output' then you must create it next to 'input' folder.
+
+## How Works
 
 
-![Face Mesh](https://github.com/alex1779/Mediapipe-Works-with-Open-cv/blob/master/imgs/05.gif)
+## Things to improve
 
+Obviously this needs to be improved since it does not return a correct output. The image should be complete and missing 'triangles'. This is because a direct triangulation of the original image is performed. Perhaps to solve the 'empty triangles' it could be filled taking as reference the opposite side of the face.
 
+![Intro](https://github.com/alex1779/Mediapipe_Generate_UVS/blob/master/imgs/3.jpg)
 
 
 
