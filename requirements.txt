@@ -1,0 +1,6 @@
+numpy==1.22.3
+mediapipe==0.8.9.1
+opencv-python==4.5.5.64
+imutils==0.5.4
+
+
